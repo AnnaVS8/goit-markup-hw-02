@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -15,8 +21,12 @@
           >Web<span class="header-logo">Studio</span></a
         >
         <ul class="site-nav list">
-          <li><a class="nav-menu link" href="#">Студія</a></li>
-          <li><a class="nav-menu link" href="#">Портфоліо</a></li>
+          <li><a class="nav-menu link" href="/index.html">Студія</a></li>
+          <li>
+            <a class="nav-menu link current" href="./portfolio.html"
+              >Портфоліо</a
+            >
+          </li>
           <li><a class="nav-menu link" href="#">Контакти</a></li>
         </ul>
       </nav>
@@ -36,13 +46,13 @@
     <main>
       <!-- Портфоліо -->
       <section class="section">
-        <h1 class="invisible-title">Портфоліо</h1>
+        <h1 class="visually-hidden">Портфоліо</h1>
         <ul class="list">
-          <li><button type="button">Усі</button></li>
-          <li><button type="button">Веб-сайти</button></li>
-          <li><button type="button">Додатки</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+          <li><button class="bt current" type="button">Усі</button></li>
+          <li><button class="bt" type="button">Веб-сайти</button></li>
+          <li><button class="bt" type="button">Додатки</button></li>
+          <li><button class="bt" type="button">Дизайн</button></li>
+          <li><button class="bt" type="button">Маркетинг</button></li>
         </ul>
         <ul class="list">
           <li>

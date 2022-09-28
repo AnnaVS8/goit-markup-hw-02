@@ -1,93 +1,193 @@
-:root{
-    --primary-text-color: #757575;
-    --title-text-color:#212121;
-    --hover-text-color: #2196F3;
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --hover-text-color: #2196f3;
+  --white-text-color: #ffffff;
+  --black-text-color: #000000;
+  --primary-bg-color: #ffffff;
+  --section-bg-color: #f5f4fa;
+  --button-bg-color: #2196f3;
+  --hero-footer-bg-color: #2f303a;
 }
-body{
-    background-color: #F5F5F5;
-    color: var(--primary-text-color);
-    
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.14;
 }
-.list{
-    list-style: none; 
+
+.list {
+  list-style: none;
 }
-.link{
-    text-decoration: none;
+.link {
+  text-decoration: none;
 }
-.section{
-    color: var(--title-text-color);
+.section {
+  color: var(--title-text-color);
 }
-.invisible-title{
-    color: rgba(0, 0, 0, 0);
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 /* Шапка сайту */
-.page-header{
-    background-color: #FFFFFF;
-    }
+.page-header {
+  font-weight: 500;
+}
+.logo,
+.header-logo,
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
 .logo {
-    color: #2196F3;
+  color: var(--hover-text-color);
 }
-.header-logo{
-    color: #000000;
+.header-logo {
+  color: var(--black-text-color);
 }
-.footer-logo{
-    color: #FFFFFF;
+.footer-logo {
+  color: var(--white-text-color);
 }
-.nav-menu{
-color: var(--title-text-color);
+.site-nav,
+.contacts {
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
-.nav-menu:hover {
-    color: var(--hover-text-color);
+.nav-menu {
+  color: var(--title-text-color);
 }
-.contacts{
-    color: var(--primary-text-color);
+.nav-menu:hover,
+.nav-menu:focus,
+.current {
+  color: var(--hover-text-color);
 }
-.contacts:hover {
-    color: var(--hover-text-color);
+.contacts {
+  color: var(--primary-text-color);
 }
+.contacts:hover,
+.nav-menu:focus {
+  color: var(--hover-text-color);
+}
+/* Стилі для сторінки студіо */
 /* Hero */
-.hero{
-    background-color: #2F303A;
+.hero {
+  background-color: var(--hero-footer-bg-color);
 }
-.hero-title{
-    color: #FFFFFF;
+.hero-title {
+  color: var(--white-text-color);
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
-.hero-button{
-background-color: #2196F3;
-color: #FFFFFF;
+.bt.primary {
+  background-color: var(--button-bg-color);
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.89;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
-/* Наші переваги */
+/* Секція переваг (benefits) */
+.title.benefits {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+}
 
-/* Портфоліо */
-button[button]{
-    background-color: #F5F4FA;
+.text.benefits {
+  line-height: 1.71;
 }
-.decision{
-    color:#FFFFFF;
-    width: 370px;
-}
-button:active{
-    background-color: #2196F3;
-    color: #FFFFFF;
-}
-.list-title{
-color: var(--title-text-color);
-}
-.list-text{
-    color: var(--primary-text-color);
-}
+/* Секція занять */
+
 /* Секція команди */
-.list-team{
-    background-color:#FFFFFF ;
-    width: 270px;
+.list-team {
+  background-color: var(--white-text-color);
+  width: 270px;
 }
+.title-team,
+.text.team {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.title-team {
+  font-weight: 500;
+}
+/* .text.team {} */
+
+/* Стилі для сторінки Портфоліо */
+/* Портфоліо */
+.bt {
+  background-color: var(--section-bg-color);
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.decision {
+  color: var(--white-text-color);
+  width: 370px;
+}
+.bt:active {
+  background-color: var(--button-bg-color);
+  color: var(--white-text-color);
+}
+.bt.current {
+  background-color: var(--button-bg-color);
+  color: var(--white-text-color);
+}
+.list-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.list-text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+
 /* Footer */
-footer{
-    background-color: #2F303A;
+footer {
+  background-color: var(--hero-footer-bg-color);
 }
-.address{
-    color: #FFFFFF;
+.address,
+.callback {
+  line-height: 1.71;
+  font-style: normal;
 }
-.callback{
-    color: rgba(255, 255, 255, 0.6);
+.address {
+  color: var(--white-text-color);
+}
+.callback {
+  color: rgba(255, 255, 255, 0.6);
+}
+.callback:hover {
+  color: var(--hover-text-color);
 }
